@@ -2,44 +2,44 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   Qty-HRM:
   - AC REDO
-  - B
+  - Q
+  - W
   - E
-  - P
-  - O
+  - R
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - V
-  - L
-  - J
-  - Z
+  - U
+  - I
+  - O
+  - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: W, h: '$$mdi:apple-keyboard-option$$'}
   - {t: A, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: U, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ',', h: LGUI, s: <}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: LGUI}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: C, h: RGUI}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: R, h: RIGHT GUI}
+  - {t: H, h: RGUI}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RIGHT GUI}
   - {t: N, h: '$$mdi:apple-keyboard-option$$'}
   - {t: M, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-shift$$
   - Z
-  - Y
   - X
-  - .
-  - K
+  - C
+  - V
+  - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
-  - {t: '''', s: '"'}
-  - Q
-  - G
+  - B
+  - N
+  - M
   - H
   - F
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
