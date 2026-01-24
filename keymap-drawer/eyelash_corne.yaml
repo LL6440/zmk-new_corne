@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - {t: A, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -29,7 +29,7 @@ layers:
   - {t: L, h: RIGHT GUI}
   - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ']', s: '}'}
+  - {t: '[', s: '{'}
   - Z
   - X
   - C
@@ -46,7 +46,7 @@ layers:
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
-  - {t: '$$mdi:keyboard-space$$', h: NumSpc}
+  - {t: '$$mdi:keyboard-return$$', h: NumSpc}
   - Raise
   - Fun/Media
   Lower:
