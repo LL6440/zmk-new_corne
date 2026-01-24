@@ -298,10 +298,10 @@
         bepo_layer_hmr {
             display-name = "Qty-HRM";
             bindings = <
-&kp C_AC_REDO     &kp Q        &kp W            &kp E         &kp R              &kp T                           &kp UP                &kp Y        &kp U         &kp I         &kp O             &kp P        &kp BSPC
-&hml RIGHT_ALT W  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &hml LGUI G           &kp LEFT  &kp ENTER  &kp RIGHT  &hmr RGUI H  &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT N  &hmr RIGHT_ALT M
-&kp LSHFT         &kp Z        &kp X            &kp C         &kp V              &kp B        &none              &kp DOWN              &kp B        &kp N         &kp M         &kp H             &kp F        &mt RSHFT ENTER
-                                                &mo 3         &lt 1 TAB          &lt 6 SPACE                                           &lt 7 SPACE  &mo 2         &mo 4
+&kp C_AC_REDO                &kp Q        &kp W            &kp E         &kp R              &kp T                           &kp UP                &kp Y        &kp U         &kp I         &kp O             &kp P           &kp BSPC
+&hml RIGHT_ALT LEFT_BRACKET  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &hml LGUI G           &kp LEFT  &kp ENTER  &kp RIGHT  &hmr RGUI H  &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT SEMI  &hmr RIGHT_ALT APOS
+&kp RIGHT_BRACKET            &kp Z        &kp X            &kp C         &kp V              &kp B        &none              &kp DOWN              &kp N        &kp M         &kp COMMA     &kp PERIOD        &kp SLASH       &mt RSHFT BACKSLASH
+                                                           &mo 3         &lt 1 TAB          &lt 6 SPACE                                           &lt 7 SPACE  &mo 2         &mo 4
             >;
         };
 
