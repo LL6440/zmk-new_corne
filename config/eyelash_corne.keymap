@@ -167,7 +167,7 @@
         bpo_brace: bpo_brace {
             compatible = "zmk,behavior-mod-morph";
             label = "BPO_BRACE";
-            bindings = <&kp RA(NUMBER_2)>, <&kp RA(Y)>;
+            bindings = <&kp RA(X)>, <&kp RA(C)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -432,10 +432,10 @@
         raise_layer {
             display-name = "Raise";
             bindings = <
-&kp ESC     &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                           &kp UP                &kp N6     &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp DEL
-&caps_word  &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp GT                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS   &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp GRAVE
-&kp LSHFT   &trans                  &kp LBKT                   &kp RBKT                  &kp LBRC                           &kp RBRC  &kp SPACE              &kp DOWN              &kp TILDE  &kp UNDER  &kp NUHS      &kp NUBS   &kp PIPE       &kp BACKSLASH
-                                                               &trans                    &trans                             &trans                                                 &trans     &trans     &trans
+&kp ESC     &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                           &kp UP                &kp N6           &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp DEL
+&caps_word  &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp GT                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp GRAVE
+&kp LSHFT   &trans                  &kp LBKT                   &kp RBKT                  &kp LBRC                           &kp RBRC  &kp SPACE              &kp DOWN              &kp TILDE        &kp UNDER  &kp NUHS      &kp NUBS   &kp PIPE       &kp BACKSLASH
+                                                               &trans                    &trans                             &trans                                                 &trans           &trans     &trans
             >;
         };
 
