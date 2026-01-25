@@ -77,7 +77,7 @@ layers:
   - {t: KP 5, h: '$$mdi:apple-keyboard-control$$'}
   - {t: KP 6, h: RIGHT GUI}
   - {t: KP PLUS, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Fn_Numpad, h: toggle}
+  - '&num_tog 1'
   - {t: '$$mdi:transfer$$', type: trans}
   - F9
   - F10
