@@ -317,10 +317,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp ESC  &kp F1            &kp F2            &kp F3         &kp F4              &kp C_AL_CALCULATOR                      &kp UP                &kp KP_SLASH     &kp KP_N7               &kp KP_N8         &kp KP_N9             &kp KP_MINUS       &kp BSPC
-&trans   &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &trans
-&trans   &kp F9            &kp F10           &kp F11        &kp F12             &kp SEMI             &trans              &kp DOWN              &kp_dot_comma    &kp KP_N1               &kp KP_N2         &kp KP_N3             &kp KP_ENTER       &kp G
-                                             &trans         &trans              &kp SPACE                                                      &kp SPACE        &kp KP_N0               &trans
+&trans  &kp F1            &kp F2            &kp F3         &kp F4              &kp C_AL_CALCULATOR                      &kp UP                &kp KP_SLASH     &kp KP_N7               &kp KP_N8         &kp KP_N9             &kp KP_MINUS       &trans
+&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &trans
+&trans  &kp F9            &kp F10           &kp F11        &kp F12             &kp C_AL_EMAIL       &trans              &kp DOWN              &kp_dot_comma    &kp KP_N1               &kp KP_N2         &kp KP_N3             &kp KP_ENTER       &kp G
+                                            &trans         &trans              &trans                                                         &trans           &lt 2 KP_N0             &trans
             >;
         };
 
