@@ -226,6 +226,60 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        bpo_amp_equal: bpo_amp_equal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_AMP_EQUAL";
+            bindings = <&kp RA(E)>, <&kp MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bpo_slash_backslash: bpo_slash_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_SLASH_BACKSLASH";
+            bindings = <&kp N9>, <&kp RA(Z)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bpo_arob_pipe: bpo_arob_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_AROB_PIPE";
+            bindings = <&kp N6>, <&kp RA(Q)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bpo_underscore_minus: bpo_underscore_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_UNDERSCORE_MINUS";
+            bindings = <&kp RA(SPACE)>, <&kp N8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bpo_dblquot_singquot: bpo_dblquot_singquot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_DBLQUOT_SINGQUOT";
+            bindings = <&kp N1>, <&kp RA(G)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        Alttab_c_cedilla: Alttab_c_cedilla {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALTTAB_C_CEDILLA";
+            bindings = <&macro_alt_tab>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     //  key positions (for hold-trigger-key-positions):
@@ -332,6 +386,14 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
+        macro_alt_tab: macro_alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp TAB>;
+
+            label = "MACRO_ALT_TAB";
+        };
     };
 
     combos {
@@ -385,21 +447,21 @@
         };
 
         combo_cut_z_x {
-            bindings = <&kp C_AC_CUT>;
+            bindings = <&kp K_CUT>;
             key-positions = <29 30>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
 
         combo_copy_x_c {
-            bindings = <&kp C_AC_COPY>;
+            bindings = <&kp K_COPY>;
             key-positions = <30 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
 
         combo_paste_c_v {
-            bindings = <&kp C_AC_PASTE>;
+            bindings = <&kp K_PASTE>;
             key-positions = <31 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
@@ -413,8 +475,8 @@
             display-name = "Qty-HRM";
             bindings = <
 &kp C_AC_REDO                 &kp Q        &kp W            &kp E         &kp R              &kp T                           &kp UP                &kp Y        &kp U         &kp I         &kp O             &kp P           &kp BSPC
-&hml RIGHT_ALT RIGHT_BRACKET  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &hml LGUI G           &kp LEFT  &kp ENTER  &kp RIGHT  &hmr RGUI H  &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT SEMI  &hmr RIGHT_ALT APOS
-&kp LEFT_BRACKET              &kp Z        &kp X            &kp C         &kp V              &kp B        &none              &kp DOWN              &kp N        &kp M         &kp COMMA     &kp PERIOD        &kp SLASH       &mt RSHFT BACKSLASH
+&hml RIGHT_ALT RIGHT_BRACKET  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT SEMI  &hmr RIGHT_ALT APOS
+&kp LEFT_BRACKET              &kp Z        &kp X            &kp C         &kp V              &kp B        &none              &kp DOWN              &kp N        &kp M         &kp COMMA     &kp PERIOD        &kp SLASH       &Alttab_c_cedilla 0 BACKSLASH
                                                             &mo 3         &lt 1 TAB          &lt 6 SPACE                                           &lt 7 ENTER  &mo 2         &mo 4
             >;
         };
@@ -432,10 +494,10 @@
         raise_layer {
             display-name = "Raise";
             bindings = <
-&kp ESC     &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                           &kp UP                &kp N6           &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp DEL
-&caps_word  &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp GT                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp GRAVE
-&kp LSHFT   &trans                  &kp LBKT                   &kp RBKT                  &kp LBRC                           &kp RBRC  &kp SPACE              &kp DOWN              &kp TILDE        &kp UNDER  &kp NUHS      &kp NUBS   &kp PIPE       &kp BACKSLASH
-                                                               &trans                    &trans                             &trans                                                 &trans           &trans     &trans
+&kp ESC         &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                            &kp UP                &kp N6           &kp HOME   &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp DEL
+&caps_word      &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp GT                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp GRAVE
+&bpo_amp_equal  &bpo_slash_backslash    &bpo_arob_pipe             &bpo_underscore_minus     &bpo_dblquot_singquot              &kp GRAVE  &kp SPACE              &kp DOWN              &kp TILDE        &kp UNDER  &kp NUHS      &kp NUBS   &kp PIPE       &kp BACKSLASH
+                                                                   &trans                    &trans                             &trans                                                  &trans           &trans     &trans
             >;
         };
 
