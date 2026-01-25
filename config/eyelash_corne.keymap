@@ -54,9 +54,12 @@
 };
 
 &mmv {
-    delay-ms = <0>;
-    acceleration-exponent = <5>;
+    delay-ms = <1>;
+    acceleration-exponent = <2>;
+    trigger-period-ms = <2>;
 };
+
+&tog { toggle-mode = "flip"; };
 
 / {
     behaviors {
@@ -491,7 +494,7 @@
             key-positions = <0 5>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
-            layers = <3>;
+            layers = <4>;
         };
     };
 
@@ -504,12 +507,12 @@
 &kp C_AC_REDO                 &kp Q        &kp W            &kp E         &kp R              &kp T                           &kp UP                &kp Y        &kp U         &kp I         &kp O             &kp P           &kp BSPC
 &hml RIGHT_ALT RIGHT_BRACKET  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT SEMI  &hmr RIGHT_ALT APOS
 &kp LEFT_BRACKET              &kp Z        &kp X            &kp C         &kp V              &kp B        &none              &kp DOWN              &kp N        &kp M         &kp COMMA     &kp PERIOD        &kp SLASH       &Alttab_c_cedilla 0 BACKSLASH
-                                                            &mo 5         &lt 1 TAB          &lt 4 SPACE                                           &lt 6 ENTER  &mo 2         &mo 3
+                                                            &mo 5         &lt 1 TAB          &lt 3 SPACE                                           &lt 6 ENTER  &mo 2         &mo 4
             >;
         };
 
-        lower_layer {
-            display-name = "Lower";
+        Function_and_numpad {
+            display-name = "Fn_Numpad";
             bindings = <
 &trans  &kp F1            &kp F2            &kp F3         &kp F4              &kp C_AL_CALCULATOR                      &kp UP                &kp KP_SLASH     &kp KP_N7               &kp KP_N8         &kp KP_N9             &kp KP_MINUS       &trans
 &trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &tog 1
@@ -528,6 +531,16 @@
             >;
         };
 
+        mouse_layer {
+            display-name = "Mouse";
+            bindings = <
+&none  &none         &none         &none      &none      &none                         &kp UP                &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
+&none  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &kp LSHFT  &mkp MB1            &kp LEFT  &kp ENTER  &kp RIGHT  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &tog 3
+&none  &none         &none         &none      &none      &none     &trans              &kp DOWN              &none     &none           &none           &none            &none           &none
+                                   &mo 2      &mo 1      &mo 0                                               &mkp MB1  &mkp MB2        &mkp MB3
+            >;
+        };
+
         funmedia_layer {
             display-name = "Fun/Media";
 
@@ -535,19 +548,9 @@
 
             bindings = <
 &mt C_POWER E  &mt C_SLEEP_MODE S  &mt C_AL_LOGOFF O  &none      &none      &none                      &kp UP                &kp C_NEXT      &kp HOME        &kp UP_ARROW        &kp END          &kp PAGE_UP        &kp C_PLAY_PAUSE
-&kp RIGHT_ALT  &kp LALT            &kp LGUI           &kp LCTRL  &kp LSHFT  &none            &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_PREVIOUS  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW  &kp PAGE_DOWN      &tog 3
+&kp RIGHT_ALT  &kp LALT            &kp LGUI           &kp LCTRL  &kp LSHFT  &none            &kp LEFT  &kp ENTER  &kp RIGHT  &kp C_PREVIOUS  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW  &kp PAGE_DOWN      &tog 4
 &none          &none               &none              &none      &none      &none  &trans              &kp DOWN              &kp C_STOP      &kp C_REWIND    &kp C_FAST_FORWARD  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
                                                       &none      &none      &none                                            &none           &none           &trans
-            >;
-        };
-
-        mouse_layer {
-            display-name = "Mouse";
-            bindings = <
-&none  &none         &none         &none      &none      &none                         &kp UP                &none     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
-&none  &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &kp LSHFT  &mkp MB1            &kp LEFT  &kp ENTER  &kp RIGHT  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &tog 4
-&none  &none         &none         &none      &none      &none     &trans              &kp DOWN              &none     &none           &none           &none            &none           &none
-                                   &mo 2      &mo 1      &mo 0                                               &mkp MB1  &mkp MB2        &mkp MB3
             >;
         };
 
