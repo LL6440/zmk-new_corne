@@ -59,8 +59,6 @@
     trigger-period-ms = <2>;
 };
 
-&tog { toggle-mode = "on"; };
-
 / {
     behaviors {
         mup: mute_unmute_ptt {
@@ -287,6 +285,13 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        num_tog: num_tog {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "NUM_TOG";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
         };
     };
 
@@ -515,7 +520,7 @@
             display-name = "Fn_Numpad";
             bindings = <
 &trans  &kp F1            &kp F2            &kp F3         &kp F4              &kp C_AL_CALCULATOR                      &kp UP                &kp KP_SLASH     &kp KP_N7               &kp KP_N8         &kp KP_N9             &kp KP_MINUS       &trans
-&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &tog 1
+&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &num_tog 1
 &trans  &kp F9            &kp F10           &kp F11        &kp F12             &kp C_AL_EMAIL       &trans              &kp DOWN              &kp_dot_comma    &kp KP_N1               &kp KP_N2         &kp KP_N3             &kp KP_ENTER       &kp KP_COMMA
                                             &trans         &trans              &trans                                                         &trans           &lt 2 KP_N0             &trans
             >;
