@@ -50,7 +50,7 @@ layers:
   - Raise
   - Fun/Media
   Lower:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
@@ -62,7 +62,7 @@ layers:
   - KP 8
   - KP 9
   - KP MINUS
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
@@ -83,7 +83,7 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ;, s: ':'}
+  - AL EMAIL
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
   - {t: KP DOT, s: KP COMMA}
@@ -94,9 +94,9 @@ layers:
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - KP 0
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: KP 0, h: Raise}
   - {t: '$$mdi:transfer$$', type: trans}
   Raise:
   - $$mdi:keyboard-esc$$
@@ -142,7 +142,7 @@ layers:
   - '|'
   - {t: \, s: '|'}
   - Qty-HRM
-  - Qty-HRM
+  - {t: Qty-HRM, type: held alternate}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
   - {t: Qty-HRM, type: held}
