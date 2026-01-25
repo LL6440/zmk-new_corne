@@ -59,7 +59,7 @@
     trigger-period-ms = <2>;
 };
 
-&tog { toggle-mode = "flip"; };
+&tog { toggle-mode = "on"; };
 
 / {
     behaviors {
