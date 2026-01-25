@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  Bépo:
+  Bepo:
   - AC REDO
   - Q
   - W
@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Fn_Numpad}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
   - {t: '$$mdi:keyboard-return$$', h: NumSpc}
-  - Raise
+  - SpCh_Nav
   - Fun/Media
   Fn_Numpad:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -96,9 +96,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP 0, h: Raise}
+  - {t: KP 0, h: SpCh_Nav}
   - {t: '$$mdi:transfer$$', type: trans}
-  Raise:
+  SpCh_Nav:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -126,7 +126,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - PgDn
-  - {t: Raise, h: toggle}
+  - {t: SpCh_Nav, h: toggle}
   - {t: AltGr+E, s: '-'}
   - {t: '9', s: AltGr+Z}
   - {t: '6', s: AltGr+Q}
@@ -135,10 +135,10 @@ layers:
   - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
+  - APP
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - MENU RIGHT
-  - CONTEXT MENU
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PAUSE BREAK
   - Ins
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,9 +190,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Raise
+  - SpCh_Nav
   - Fn_Numpad
-  - {t: Bépo, type: held}
+  - {t: Bepo, type: held}
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
@@ -359,11 +359,11 @@ combos:
 - p: [8, 9, 10]
   k: $$mdi:keyboard-esc$$
 - p: [29, 30]
-  k: Ctl+X
-- p: [30, 31]
   k: Ctl+C
+- p: [30, 31]
+  k: Ctl+H
 - p: [31, 32]
-  k: Ctl+V
+  k: Ctl+U
 - p: [28, 41]
   k: Ctl+$$mdi:apple-keyboard-caps$$
 - p: [0, 5]
