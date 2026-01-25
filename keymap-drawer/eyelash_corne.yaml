@@ -19,11 +19,11 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: LGUI}
+  - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: H, h: RGUI}
+  - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: RIGHT GUI}
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
+  - {t: \, h: '&macro_alt_tab', s: '|'}
   - Adjust
   - {t: '$$mdi:keyboard-tab$$', h: Lower}
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
@@ -127,12 +127,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - PgDn
   - {t: '`', s: '~'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '{'
-  - '}'
+  - {t: AltGr+E, s: '-'}
+  - {t: '9', s: AltGr+Z}
+  - {t: '6', s: AltGr+Q}
+  - {t: 'AltGr+$$mdi:keyboard-space$$', s: '8'}
+  - {t: '1', s: AltGr+G}
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - '~'
@@ -457,8 +457,8 @@ combos:
 - p: [8, 9, 10]
   k: $$mdi:keyboard-esc$$
 - p: [29, 30]
-  k: AC CUT
+  k: CUT
 - p: [30, 31]
-  k: AC COPY
+  k: COPY
 - p: [31, 32]
-  k: AC PASTE
+  k: PASTE
