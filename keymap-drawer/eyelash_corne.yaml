@@ -107,25 +107,25 @@ layers:
   - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
   - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
+  - PgUp
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - (
-  - )
+  - {t: AltGr+2, h: '$$mdi:apple-keyboard-option$$', s: AltGr+3}
+  - {t: AltGr+2, h: '$$mdi:apple-keyboard-command$$', s: AltGr+Y}
+  - {t: AltGr+4, h: '$$mdi:apple-keyboard-control$$', s: AltGr+5}
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: '5'}
   - '>'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - +
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - PgDn
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -141,12 +141,12 @@ layers:
   - NUBS
   - '|'
   - {t: \, s: '|'}
-  - Qty-HRM
-  - {t: Qty-HRM, type: held alternate}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-space$$
-  - {t: Qty-HRM, type: held}
-  - {t: Qty-HRM, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   Adjust:
   - Alt+$$mdi:keyboard-tab$$
   - {t: Qty-HRM, h: toggle}
@@ -392,153 +392,6 @@ layers:
   - {type: held}
   - Qty-HRM
   - Qty-HRM
-  NumTab:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - .
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - Qty-HRM
-  - Qty-HRM
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - Qty-HRM
-  - Qty-HRM
-  AltGr:
-  - $$mdi:keyboard-tab$$
-  - '&uml_a'
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - '&uml_u'
-  - '&uml_o'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - S
-  - {t: '&uml_sz', h: Qty-HRM}
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - {t: K, h: Qty-HRM}
-  - L
-  - {t: ;, s: ':'}
-  - .
-  - {t: '$$mdi:apple-keyboard-shift$$', h: Qty-HRM}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: Qty-HRM}
-  - Qty-HRM
-  - Qty-HRM
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - Qty-HRM
-  - Qty-HRM
-  AltGrShft:
-  - $$mdi:keyboard-tab$$
-  - '&umu_a'
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - '&umu_u'
-  - '&umu_o'
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - S
-  - '&uml_sz'
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - .
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - Qty-HRM
-  - Qty-HRM
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
-  - Qty-HRM
-  - Qty-HRM
   Adjust 2:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Qty-HRM, h: toggle}
@@ -591,11 +444,21 @@ layers:
 combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-- p: [0, 1]
-  k: $$mdi:keyboard-esc$$
 - p: [26, 27]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [0, 1, 2]
   k: '&blockquote'
+- p: [12, 11]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [2, 3, 4]
+  k: $$mdi:keyboard-esc$$
+- p: [8, 9, 10]
+  k: $$mdi:keyboard-esc$$
+- p: [29, 30]
+  k: AC CUT
+- p: [30, 31]
+  k: AC COPY
+- p: [31, 32]
+  k: AC PASTE
