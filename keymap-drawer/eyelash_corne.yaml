@@ -91,7 +91,7 @@ layers:
   - KP 2
   - KP 3
   - KP ENTER
-  - G
+  - KP COMMA
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
