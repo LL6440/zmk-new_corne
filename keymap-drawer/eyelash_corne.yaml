@@ -114,14 +114,14 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:alpha-w-box$$
   - {t: AltGr+2, h: '$$mdi:apple-keyboard-option$$', s: AltGr+3}
-  - {t: AltGr+2, h: '$$mdi:apple-keyboard-command$$', s: AltGr+Y}
+  - {t: AltGr+X, h: '$$mdi:apple-keyboard-command$$', s: AltGr+C}
   - {t: AltGr+4, h: '$$mdi:apple-keyboard-control$$', s: AltGr+5}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: '5'}
   - '>'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - +
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
