@@ -462,21 +462,21 @@
         };
 
         combo_cut_z_x {
-            bindings = <&kp LC(X)>;
+            bindings = <&kp LC(C)>;
             key-positions = <29 30>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
 
         combo_copy_x_c {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LC(H)>;
             key-positions = <30 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
 
         combo_paste_c_v {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LC(U)>;
             key-positions = <31 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
@@ -502,7 +502,7 @@
         compatible = "zmk,keymap";
 
         bepo_layer {
-            display-name = "Bépo";
+            display-name = "Bepo";
             bindings = <
 &kp C_AC_REDO                 &kp Q        &kp W            &kp E         &kp R              &kp T                           &kp UP                &kp Y        &kp U         &kp I         &kp O             &kp P           &kp BSPC
 &hml RIGHT_ALT RIGHT_BRACKET  &hml LALT A  &hml LEFT_GUI S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RIGHT_GUI L  &hmr LALT SEMI  &hmr RIGHT_ALT APOS
@@ -521,13 +521,13 @@
             >;
         };
 
-        raise_layer {
-            display-name = "Raise";
+        Special_char_and_nav {
+            display-name = "SpCh_Nav";
             bindings = <
-&kp ESC         &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                            &kp UP                &kp PRINTSCREEN   &kp HOME            &kp UP_ARROW  &kp END    &kp PAGE_UP      &kp DEL
-&caps_word      &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp EQUAL               &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT   &kp LEFT            &kp DOWN      &kp RIGHT  &kp PAGE_DOWN    &tog 2
-&bpo_amp_equal  &bpo_slash_backslash    &bpo_arob_pipe             &bpo_underscore_minus     &bpo_dblquot_singquot              &kp GRAVE  &kp SPACE              &kp DOWN              &kp C_MENU_RIGHT  &kp K_CONTEXT_MENU  &none         &none      &kp PAUSE_BREAK  &kp INSERT
-                                                                   &trans                    &trans                             &trans                                                  &trans            &trans              &trans
+&kp ESC         &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                            &kp UP                &kp PRINTSCREEN  &kp HOME  &kp UP_ARROW  &kp END           &kp PAGE_UP      &kp DEL
+&caps_word      &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp EQUAL               &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT  &kp DOWN      &kp RIGHT         &kp PAGE_DOWN    &tog 2
+&bpo_amp_equal  &bpo_slash_backslash    &bpo_arob_pipe             &bpo_underscore_minus     &bpo_dblquot_singquot              &kp GRAVE  &kp SPACE              &kp DOWN              &kp K_APP        &none     &none         &kp C_MENU_RIGHT  &kp PAUSE_BREAK  &kp INSERT
+                                                                   &trans                    &trans                             &trans                                                  &trans           &trans    &trans
             >;
         };
 
