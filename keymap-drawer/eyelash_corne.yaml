@@ -55,7 +55,7 @@ layers:
   - F2
   - F3
   - F4
-  - F5
+  - AL CALCULATOR
   - $$mdi:arrow-up-bold$$
   - KP SLASH
   - KP 7
@@ -64,40 +64,40 @@ layers:
   - KP MINUS
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F8, h: '$$mdi:apple-keyboard-shift$$'}
+  - AL WWW
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - KP ASTERISK
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - KP ENTER
+  - {t: KP 4, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP 5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: KP 6, h: RIGHT GUI}
+  - {t: KP PLUS, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F9
+  - F10
   - F11
   - F12
-  - AL CALC
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ;, s: ':'}
-  - {t: Ctl+Sft+M, h: 'Ctl+$$mdi:keyboard-space$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
-  - ':'
+  - {t: KP DOT, s: KP COMMA}
   - KP 1
   - KP 2
   - KP 3
-  - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP ENTER
+  - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - KP 0
-  - KP DOT
+  - {t: '$$mdi:transfer$$', type: trans}
   Raise:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -597,5 +597,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [0, 1]
+- p: [0, 1, 2]
   k: '&blockquote'
