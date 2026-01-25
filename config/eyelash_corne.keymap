@@ -145,6 +145,15 @@
 
             hold-trigger-on-release;
         };
+
+        kp_dot_comma: kp_dot_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_DOT_COMMA";
+            bindings = <&kp KP_DOT>, <&kp KP_COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     //  key positions (for hold-trigger-key-positions):
@@ -287,7 +296,7 @@
         combo_blockquote_esc_tab_q {
             require-prior-idle-ms = <100>;
             timeout-ms = <100>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
             bindings = <&blockquote>;
         };
     };
@@ -308,10 +317,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp ESC  &kp F1   &kp F2   &kp F3         &kp F4  &kp F5                                           &kp UP                &kp KP_SLASH     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
-&trans   &kp F6   &kp F7   &kp F8         &kp F9  &kp F10                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
-&trans   &kp F11  &kp F12  &kp C_AL_CALC  &none   &kp SEMI   &mup LC(SPACE) LC(LS(M))              &kp DOWN              &kp COLON        &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp EQUAL     &trans
-                           &trans         &trans  &kp SPACE                                                              &kp SPACE        &kp KP_N0  &kp KP_DOT
+&kp ESC  &kp F1            &kp F2            &kp F3         &kp F4              &kp C_AL_CALCULATOR                      &kp UP                &kp KP_SLASH     &kp KP_N7               &kp KP_N8         &kp KP_N9             &kp KP_MINUS       &kp BSPC
+&trans   &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LCTRL F7  &hml LEFT_SHIFT F8  &kp C_AL_WWW                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &hmr RIGHT_SHIFT KP_N4  &hmr RCTRL KP_N5  &hmr RIGHT_GUI KP_N6  &hmr LALT KP_PLUS  &trans
+&trans   &kp F9            &kp F10           &kp F11        &kp F12             &kp SEMI             &trans              &kp DOWN              &kp_dot_comma    &kp KP_N1               &kp KP_N2         &kp KP_N3             &kp KP_ENTER       &kp G
+                                             &trans         &trans              &kp SPACE                                                      &kp SPACE        &kp KP_N0               &trans
             >;
         };
 
