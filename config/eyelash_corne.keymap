@@ -567,7 +567,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp UP                &kp NUMBER_6  &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp RALT   &kp LALT      &kp LGUI      &kp LCTRL     &kp LSHFT     &none             &kp LEFT  &kp ENTER  &kp RIGHT  &none         &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &kp RALT
-&none      &none         &none         &none         &none         &none   &trans              &kp DOWN              &none         &none      &none      &none     &none     &none
+&none      &none         &none         &none         &none         &none   &trans              &kp DOWN              &none         &tog 1     &tog 2     &tog 3    &tog 4    &none
                                        &none         &none         &none                                             &trans        &none      &none
             >;
         };
