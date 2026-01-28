@@ -380,14 +380,7 @@
 
         combo_enter_s_d_f {
             bindings = <&kp ENTER>;
-            key-positions = <23 24 25>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_enter_s_d_f {
-            bindings = <&kp ENTER>;
-            key-positions = <17 16 15>;
+            key-positions = <15 16 17>;
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
