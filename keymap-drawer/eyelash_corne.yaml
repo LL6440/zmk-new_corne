@@ -367,7 +367,5 @@ combos:
 - p: [0, 5]
   k: RESET
   l: [Fun/Media]
-- p: [23, 24, 25]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [17, 16, 15]
+- p: [15, 16, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
