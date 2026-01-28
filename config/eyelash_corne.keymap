@@ -384,6 +384,13 @@
             timeout-ms = <100>;
             require-prior-idle-ms = <100>;
         };
+
+        combo_enter_s_d_k {
+            bindings = <&kp ENTER>;
+            key-positions = <17 16 15>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     keymap {
