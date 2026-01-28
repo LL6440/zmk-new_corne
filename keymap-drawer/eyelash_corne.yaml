@@ -369,3 +369,5 @@ combos:
   l: [Fun/Media]
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [17, 16, 15]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
