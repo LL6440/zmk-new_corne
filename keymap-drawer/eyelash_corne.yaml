@@ -117,7 +117,7 @@ layers:
   - {t: AltGr+X, h: '$$mdi:apple-keyboard-command$$', s: AltGr+C}
   - {t: AltGr+4, h: '$$mdi:apple-keyboard-control$$', s: AltGr+5}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: '5'}
-  - {t: '=', s: +}
+  - {t: '=', s: Sft+-}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -350,8 +350,6 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [23, 24, 25]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [0, 1, 2]
-  k: '&blockquote'
 - p: [12, 11]
   k: $$mdi:backspace-reverse-outline$$
 - p: [2, 3, 4]
@@ -369,3 +367,5 @@ combos:
 - p: [0, 5]
   k: RESET
   l: [Fun/Media]
+- p: [23, 24, 25]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
