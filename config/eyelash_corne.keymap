@@ -286,6 +286,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        bpo_percent_degree: bpo_percent_degree {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BPO_PERCENT_DEGREE";
+            bindings = <&kp EQUAL>, <&kp RS(MINUS)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     //  key positions (for hold-trigger-key-positions):
@@ -299,100 +308,6 @@
     //                              &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
 
     macros {
-        blockquote: blockquote {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER>,
-                <&macro_tap>,
-                <&kp UP &kp UP>;
-        };
-
-        uml_a: umlaut_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        uml_o: umlaut_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        uml_u: umlaut_u {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        uml_sz: umlaut_sz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        umu_a: umlaut_a_uppercase {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        umu_o: umlaut_o_uppercase {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        umu_u: umlaut_u_uppercase {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
         macro_alt_tab: macro_alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -431,13 +346,6 @@
             timeout-ms = <100>;
             key-positions = <23 24 25>;
             bindings = <&kp ENTER>;
-        };
-
-        combo_blockquote_tab_q_w {
-            require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
-            key-positions = <0 1 2>;
-            bindings = <&blockquote>;
         };
 
         combo_del_p_backdel {
@@ -494,6 +402,13 @@
             require-prior-idle-ms = <100>;
             layers = <4>;
         };
+
+        combo_enter_s_d_f {
+            bindings = <&kp ENTER>;
+            key-positions = <23 24 25>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     keymap {
@@ -522,10 +437,10 @@
         Special_char_and_nav {
             display-name = "SpCh_Nav";
             bindings = <
-&kp ESC         &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                            &kp UP                &kp PRINTSCREEN  &kp HOME  &kp UP_ARROW  &kp END           &kp PAGE_UP      &kp DEL
-&caps_word      &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &kp EQUAL               &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT  &kp DOWN      &kp RIGHT         &kp PAGE_DOWN    &to 2
-&bpo_amp_equal  &bpo_slash_backslash    &bpo_arob_pipe             &bpo_underscore_minus     &bpo_dblquot_singquot              &kp GRAVE  &kp SPACE              &kp DOWN              &kp K_APP        &none     &none         &kp C_MENU_RIGHT  &kp PAUSE_BREAK  &kp INSERT
-                                                                   &trans                    &trans                             &trans                                                  &trans           &trans    &to 0
+&kp ESC         &kp N1                  &kp N2                     &kp N3                    &kp N4                             &kp N5                                      &kp UP                &kp PRINTSCREEN  &kp HOME  &kp UP_ARROW  &kp END           &kp PAGE_UP      &kp DEL
+&caps_word      &hmrl_kp_lt LEFT_ALT 0  &hmrl_kp_brace LEFT_GUI 0  &hmrl_kp_bracket LCTRL 0  &hmrl_kp_parenthesis LEFT_SHIFT 0  &bpo_percent_degree               &kp LEFT  &kp ENTER  &kp RIGHT  &kp RIGHT_SHIFT  &kp LEFT  &kp DOWN      &kp RIGHT         &kp PAGE_DOWN    &to 2
+&bpo_amp_equal  &bpo_slash_backslash    &bpo_arob_pipe             &bpo_underscore_minus     &bpo_dblquot_singquot              &kp GRAVE            &kp SPACE              &kp DOWN              &kp K_APP        &none     &none         &kp C_MENU_RIGHT  &kp PAUSE_BREAK  &kp INSERT
+                                                                   &trans                    &trans                             &trans                                                            &trans           &trans    &to 0
             >;
         };
 
