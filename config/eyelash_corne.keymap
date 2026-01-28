@@ -385,7 +385,7 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_enter_s_d_k {
+        combo_enter_s_d_f {
             bindings = <&kp ENTER>;
             key-positions = <17 16 15>;
             timeout-ms = <100>;
