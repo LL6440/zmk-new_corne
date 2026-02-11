@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: \, h: '&macro_alt_tab', s: '|'}
   - Adjust
-  - {t: '$$mdi:keyboard-tab$$', h: Fn_Numpad}
-  - {t: '$$mdi:keyboard-space$$', h: Mouse}
+  - {t: '$$mdi:keyboard-space$$', h: Fn_Numpad}
+  - {t: '$$mdi:keyboard-tab$$', h: Mouse}
   - {t: '$$mdi:keyboard-return$$', h: NumSpc}
-  - SpCh_Nav
+  - {t: '$$mdi:keyboard-space$$', h: SpCh_Nav}
   - Fun/Media
   Fn_Numpad:
   - {t: '$$mdi:transfer$$', type: trans}
